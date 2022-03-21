@@ -1,0 +1,79 @@
+﻿<Page x:Class="TestApp2.View.AttendView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestApp2.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="650"
+      Title="AttendView">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Column="1">
+            <Border BorderThickness="1" BorderBrush="#acb0af" CornerRadius="5" Margin="10 20 10 20">
+                <Grid Margin="7 9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="TeachName" MouseDown="StudName_MouseDown" Text="Teacher's Name" Style="{StaticResource textHint}"/>
+                    <TextBox x:Name="NameTeach" TextChanged="NameStud_TextChanged"  Style="{StaticResource textBox}"/>
+                </Grid>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#acb0af" CornerRadius="5" Margin="10 0 10 20">
+                <Grid Margin="7 9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="GroupName" MouseDown="GroupName_MouseDown" Text="Name of Group" Style="{StaticResource textHint}"/>
+                    <TextBox x:Name="NameGroup" TextChanged="NameGroup_TextChanged"  Style="{StaticResource textBox}"/>
+                </Grid>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#acb0af" CornerRadius="5" Margin="10 10 10 20">
+                <Grid Margin="7 9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="date" MouseDown="date_MouseDown" Text="Date" Style="{StaticResource textHint}"/>
+                    <TextBox x:Name="Data" TextChanged="Data_TextChanged"  Style="{StaticResource textBox}"/>
+                </Grid>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#acb0af" CornerRadius="5" Margin="10 10 10 20">
+                <Grid Margin="7 9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="theme" MouseDown="theme_MouseDown" Text="Theme" Style="{StaticResource textHint}"/>
+                    <TextBox x:Name="Theme" TextChanged="Theme_TextChanged"  Style="{StaticResource textBox}"/>
+                </Grid>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#acb0af" CornerRadius="5" Margin="10 10 10 40">
+                <Grid Margin="7 9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="Notes" MouseDown="Notes_MouseDown" Text="Notes" Style="{StaticResource textHint}"/>
+                    <TextBox x:Name="notes" TextChanged="notes_TextChanged"  Style="{StaticResource textBox}"/>
+                </Grid>
+            </Border>
+
+            <Button Content="Save" Style="{StaticResource RButtonSV}" Click="Button_Click" Foreground="Red" Width="180" Height="40" />
+            <Button Content="Show" Style="{StaticResource RButtonSV}" Click="Button_Click_1" Foreground="Red" Width="180" Height="40" />
+
+        </StackPanel>
+    </Grid>
+</Page>

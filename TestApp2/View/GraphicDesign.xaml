@@ -1,0 +1,81 @@
+﻿<Page x:Class="TestApp2.View.GraphicDesign"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestApp2.View"
+      mc:Ignorable="d" 
+d:DesignHeight="400" d:DesignWidth="450"
+      Title="GraphicDesign">
+
+    <Grid Background="White">
+        <ScrollViewer VerticalScrollBarVisibility="Visible">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel>
+                        <TextBlock Text="First Course" TextAlignment="Center" Style="{StaticResource textHint}" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="Internet" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Microsoft Office" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="HTML" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="CSS" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Python" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Adobe Photoshop" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Windows" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Final project" Style="{StaticResource TextBlockProg}"></TextBlock>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <StackPanel>
+                        <TextBlock Text="Second Course" TextAlignment="Center" Style="{StaticResource textHint}" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="Adobe Photoshop" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="UX/UI" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="InDesign" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Blende" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Final project" Style="{StaticResource TextBlockProg}"></TextBlock>
+                    </StackPanel>
+
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <StackPanel>
+                        <TextBlock Text="Third Course" TextAlignment="Center" Style="{StaticResource textHint}" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="Corel Draw" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Cinema 4D" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Adobe after Effects" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Autocad" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Final project" Style="{StaticResource TextBlockProg}"></TextBlock>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <StackPanel>
+                        <TextBlock Text="Fourth Course" TextAlignment="Center" Style="{StaticResource textHint}" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="Archicad" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Adobe Illustrator" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Adobe Premiere Pro" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Sony Vegas" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Final project" Style="{StaticResource TextBlockProg}"></TextBlock>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <StackPanel>
+                        <TextBlock Text="Fifth Course" TextAlignment="Center" Style="{StaticResource textHint}" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="Z brush" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="3D Max" Style="{StaticResource TextBlockProg}"></TextBlock>
+                        <TextBlock Text="Final project" Style="{StaticResource TextBlockProg}"></TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
